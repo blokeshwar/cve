@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .print-button {
+            text-align: right;
+        }
+        .print-button button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .print-button button:hover {
+            background-color: #0069d9;
+        }
+        .skills {
+            margin-top: 50px;
+        }
+        .skills img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .skills li {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .skills li img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="print-button">
+        <button onclick="window.print()">Print Resume</button>
+    </div>
+    <h1>John Doe</h1>
+    <p>123 Main Street, Any-town USA</p>
+    <p>Email: john.doe@example.com</p>
+    <p>Phone: 555-555-5555</p>
+    <hr>
+
+    <h2>Objective</h2>
+    <p>To obtain a software engineer position where I can apply my technical and analytical skills to develop high-quality software solutions.</p>
+    <h2>Education</h2>
+    <h3>B.S. in Computer Science</h3>
+    <p>XYZ University, Anytown USA</p>
+    <p>Graduated: May 20XX</p>
+    <h2>Experience</h2>
+    <h3>Software Engineer</h3>
+    <p>ABC Company, Anytown USA</p>
+    <p>June 20XX - Present</p>
+    <ul>
+        <li>Develop and maintain high-quality software applications using Java and Python</li>
+        <li>Collaborate with cross-functional teams to design, develop, and implement new features</li>
+        <li>Write clean, well-documented, and efficient code</li>
+    </ul>
+    <h3>Software Development Intern</h3>
+    <p>XYZ Company, Anytown USA</p>
+    <p>May 20XX - August 20XX</p>
+    <ul>
+        <li>Assisted in the development of a web-based application using React and Node.js</li>
+        <li>Participated in code reviews and provided feedback to improve code quality</li>
+        <li>Contributed to the development of automated testing scripts to improve product quality</li>
+    </ul>
+    <div class="skills">
+        <h2>Skills</h2>
+        <div class="search-bar">
+            <label>
+                <input type="text" placeholder="Search...">
+            </label>
+            <button>Search</button>
+        </div>
+        <img src="pr.png" alt="Your Profile Picture">
+        <ul>
+            <li><img src="https://i.imgur.com/Wkox6Z0.png" alt="Java Logo">Java</li>
+            <li><img src="https://i.imgur.com/DqZQFkL.png" alt="Python Logo">Python</li>
+            <li><img src="https://i.imgur.com/RKTh1eB.png" alt="C# Logo">C#</li>
+            <li><img src="https://i.imgur.com/4um4z5u.png" alt="Angular Logo">Angular</li>
+            <li><img src="https://i.imgur.com/LWU6Q2F.png" alt="React Logo">React</li>
+            <li><img src="https://i.imgur.com/tJ3Tq56.png" alt="Node.js Logo">Node.js</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

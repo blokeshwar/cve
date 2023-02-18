@@ -1,0 +1,371 @@
+/* Set global font styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Style navigation bar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 50px;
+}
+
+/* Style home section */
+#home {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#home p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+#home .btn {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background-color: #007bff;
+    color: #fff;
+}
+
+#home .btn:hover {
+    background-color: #0062cc;
+}
+
+/* Style about section */
+#about {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#about hr {
+    border-top: 3px solid #007bff;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#about img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Style skills section */
+#skills {
+    padding: 50px 0;
+}
+
+#skills h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#skills .card {
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#skills .card:hover
+    /* Style portfolio section */
+#portfolio h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio .col-md-4 {
+    margin-bottom: 30px;
+}
+
+#portfolio .card {
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .card:hover {
+    transform: translateY(-10px);
+}
+
+#portfolio .card img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style contact section */
+#contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+#contact button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Style footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 20px;
+    }
+
+    #home .btn {
+        font-size: 18px;
+    }
+
+    #about img {
+        max-width: 300px;
+    }
+
+    #skills .card,
+    #portfolio .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 5px;
+    }
+
+    #contact button {
+        padding: 5px 10px;
+    }
+}
+/* Style contact section */
+#contact {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style footer */
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 50px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+
+    #about img {
+        max-width: 300px;
+    }
+
+    #skills .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #home h1 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #skills .card {
+        margin-bottom: 20px;
+    }
+}
